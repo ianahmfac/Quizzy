@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Quizzy</string>
+    <string name="initializing">Initializing…</string>
+    <string name="quiz_title">Quiz Title</string>
+    <string name="quiz_description">Quiz Description</string>
+    <string name="content_desc_banner">Banner quiz</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="view_quiz">View Quiz</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="your_last_score">Your Last Score</string>
+    <string name="n_a">N/A</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="options">Options</string>
+    <string name="loading_quiz">Loading Quiz…</string>
+    <string name="question">Question</string>
+    <string name="dummy_value">0</string>
+    <string name="dummy_time">10</string>
+    <string name="fetching_data">Fetching Data</string>
+    <string name="verifying_answer">Verifying Answer</string>
+    <string name="next_question">Next Question</string>
+    <string name="correct_answers">Correct Answers</string>
+    <string name="dummy_results">100%</string>
+    <string name="wrong_answers">Wrong Answers</string>
+    <string name="wrong_answers_full">Wrong Answers\nCorrect Answer: %s</string>
+    <string name="questions_missed">Questions Missed</string>
+    <string name="results">Results</string>
+    <string name="back_to_home">Back To Home</string>
+    <string name="checking_user_account">Checking User Account…</string>
+    <string name="creating_account">Creating Account…</string>
+    <string name="account_created">Account Created…</string>
+    <string name="error_loading_data">Error Loading Data</string>
+    <string name="times_up">Times Up! No answer was submitted</string>
+    <string name="submit">Submit Results</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:backgroundTint="@color/colorDark"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_quiz_banner_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_desc_banner"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/placeholder_image" />
+
+        <View
+            android:id="@+id/viewImage"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:background="@drawable/image_banner"
+            android:translationZ="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_quiz_banner_item"
+            app:layout_constraintEnd_toEndOf="@id/iv_quiz_banner_item"
+            app:layout_constraintStart_toStartOf="@id/iv_quiz_banner_item" />
+
+        <TextView
+            android:id="@+id/tv_quiz_title_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/quiz_title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_quiz_banner_item" />
+
+        <TextView
+            android:id="@+id/tv_quiz_desc_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:lineHeight="28dp"
+            android:maxLines="5"
+            android:text="@string/quiz_description"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_quiz_title_item"
+            app:layout_constraintStart_toStartOf="@+id/tv_quiz_title_item"
+            app:layout_constraintTop_toBottomOf="@+id/tv_quiz_title_item"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:id="@+id/tv_difficulty_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/difficulty"
+            android:textColor="@color/colorLightText"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_quiz_desc_item"
+            app:layout_constraintTop_toBottomOf="@+id/tv_quiz_desc_item" />
+
+        <Button
+            android:id="@+id/btn_view_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/outline_button_bg"
+            android:padding="12dp"
+            android:text="@string/view_quiz"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_difficulty_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
